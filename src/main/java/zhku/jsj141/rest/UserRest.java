@@ -19,4 +19,7 @@ public class UserRest {
 		return JSON.toJSONString(t);
 	}
 	
+	public String Index(){
+		return "";
+	}
 }

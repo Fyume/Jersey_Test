@@ -26,20 +26,21 @@
 		<version>4.12</version>
 		<scope>test</scope>
 	</dependency>
+	<!-- grizzly -->
+	<dependency>
+        <groupId>org.glassfish.jersey.containers</groupId>
+        <artifactId>jersey-container-grizzly2-http</artifactId>
+    </dependency>
+	<!-- jersey-servlet -->
+    <dependency>
+    	<groupId>org.glassfish.jersey.containers</groupId>
+        <artifactId>jersey-container-servlet</artifactId>
+    </dependency>
 	<!-- fastjson依赖 -->
 	<dependency>
 	    <groupId>com.alibaba</groupId>
 	    <artifactId>fastjson</artifactId>
 	    <version>1.2.4</version>
 	</dependency>
-	<!-- grizzly -->
-	<dependency>
-        <groupId>org.glassfish.jersey.containers</groupId>
-        <artifactId>jersey-container-grizzly2-http</artifactId>
-    </dependency>
-    <dependency>
-    	<groupId>org.glassfish.jersey.containers</groupId>
-        <artifactId>jersey-container-servlet</artifactId>
-        </dependency>
   </dependencies>
 </project>
