@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd" id="WebApp_ID" version="3.1">
+	<display-name>JerseyTest</display-name>
+	<welcome-file-list>
+	  <welcome-file>index.html</welcome-file>
+	</welcome-file-list>
+	<servlet>
+	    <servlet-name>JerseyServlet</servlet-name>
+	    <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+	    <!-- <init-param>
+	        <param-name>jersey.config.server.provider.packages</param-name>
+	        <param-value>zhku.jsj141.rest</param-value>
+	    </init-param> -->
+	    <!-- grizzly容器测试rest接口的时候用不上这个web.xml都是直接加载资源（rest包） -->
+	    <!-- 相比直接扫描rest包 这里多注册个打印日志 -->
+		<init-param>
+		      <param-name>javax.ws.rs.Application</param-name>
+		      <param-value>zhku.jsj141.config.RestApplication</param-value>
+        </init-param>
+	    <load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+	    <servlet-name>JerseyServlet</servlet-name>
+	    <url-pattern>/rest/*</url-pattern>
+	</servlet-mapping>
+</web-app>
