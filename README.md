@@ -1,5 +1,7 @@
 # JerseyTest
 
+> ##### jersey和angularjs的练习例子
+
 ![例子相关图片](https://github.com/Fyume/Jersey_Test/tree/master/src/main/webapp/img/readme/1.jpg)
 
 官网上的例子：
