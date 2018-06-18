@@ -5,6 +5,9 @@
 官网上的例子：
 
 https://jersey.github.io/documentation/latest/getting-started.html#exploring-jersey-examples
+
+------------
+
 1.假若用grizzly测试rest的接口 直接运行Main类 即刻访问接口
 
 2.假若用tomcat 则按照里面的配置（web.xml）。其中，RestApplication类除了加载资源文件（rest包）之外多注册一个日志以便调试，所以web.xml的配置稍微有点改动：
